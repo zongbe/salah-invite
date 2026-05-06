@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salah Festival Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="salah.css" />
+</head>
+<body>
+<div class="page">
+
+  <div class="ornament">☽ ✦ ☾</div>
+  <div class="ornament-line"><span>Eid Celebration Invitation</span></div>
+
+  <div class="card">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="arabic-top">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <h1>You Are Invited</h1>
+      <p class="sub">To Celebrate Salah Festival</p>
+      <div class="divider"></div>
+      <p class="hero-body">
+        With great joy and gratitude to Allah (SWT), I invite you to join me
+        as I celebrate my <strong>conversion to Islam</strong> and the
+        blessed <strong>Eid / Salah Festival</strong>.<br><br>
+        Come share in the feast, the prayers, and the happiness of this
+        milestone. Your presence and kind gifts will make this day truly
+        unforgettable. <em>Allahu Akbar!</em>
+      </p>
+    </div>
+
+    <!-- EVENT DETAILS -->
+    <div class="details-strip">
+      <div class="detail-item">
+        <div class="detail-icon">📅</div>
+        <div class="detail-label">Date</div>
+        <div class="detail-value">Eid Al-Adha 2025</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">⏰</div>
+        <div class="detail-label">Time</div>
+        <div class="detail-value">After Morning Prayer</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">📍</div>
+        <div class="detail-label">Venue</div>
+        <div class="detail-value">Host's Residence, Lagos</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">👔</div>
+        <div class="detail-label">Dress Code</div>
+        <div class="detail-value">Traditional / Smart</div>
+      </div>
+    </div>
+
+    <!-- GIFT SELECTION -->
+    <div class="section">
+      <div class="section-title">Select Your Gift(s)</div>
+      <p class="section-sub">Please tick the gift(s) you will be bringing along to the celebration</p>
+
+      <div class="gifts-grid">
+        <div class="gift-item">
+          <input type="checkbox" id="g-ram" name="gifts" value="Ram">
+          <label for="g-ram"><span class="icon"></span><span class="checkmark"></span>Ram</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-cow" name="gifts" value="Cow">
+          <label for="g-cow"><span class="icon"></span><span class="checkmark"></span>Cow</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-pepper" name="gifts" value="Pepper">
+          <label for="g-pepper"><span class="icon"></span><span class="checkmark"></span>Pepper</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-tomato" name="gifts" value="Tomato">
+          <label for="g-tomato"><span class="icon"></span><span class="checkmark"></span>Tomato</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-drinks" name="gifts" value="Drinks">
+          <label for="g-drinks"><span class="icon"></span><span class="checkmark"></span>Drinks</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-dj" name="gifts" value="DJ">
+          <label for="g-dj"><span class="icon"></span><span class="checkmark"></span>DJ</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-car" name="gifts" value="Rented Car">
+          <label for="g-car"><span class="icon"></span><span class="checkmark"></span>Rented Car</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-canopy" name="gifts" value="Canopy">
+          <label for="g-canopy"><span class="icon"></span><span class="checkmark"></span>Canopy</label>
+        </div>
+        <div class="gift-item">
+          <input type="checkbox" id="g-table" name="gifts" value="Table &amp; Chair">
+          <label for="g-table"><span class="icon"></span><span class="checkmark"></span>Table &amp; Chair</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- RSVP FORM -->
+    <div class="form-section">
+      <div class="section-title">✉️ RSVP — Confirm Your Attendance</div>
+      <p class="section-sub">Fill in your details below so we can expect you</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" placeholder="e.g. Emeka Okafor" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="e.g. 08012345678" required />
+        </div>
+        <div class="field">
+          <label for="whatsapp">WhatsApp Number</label>
+          <input type="tel" id="whatsapp" placeholder="e.g. 08012345678" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="e.g. emeka@gmail.com" />
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button class="btn" onclick="handleSubmit()">Confirm Attendance</button>
+      </div>
+
+      <div class="success" id="successMsg">
+        <div class="big"></div>
+        <strong>JazakAllahu Khairan!</strong><br>
+        Your RSVP has been received. We look forward to celebrating with you.<br>
+        <em style="color:var(--muted);font-size:.88rem;">Eid Mubarak in advance!</em>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="card-footer">
+      Hosted with love by <span>Abdullahi</span> &nbsp;·&nbsp;
+      For inquiries: <span>08148813274</span> &nbsp;·&nbsp;
+      <span>Eid Mubarak 🌙</span>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function handleSubmit() {
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+
+    if (!name || !phone) {
+      alert('Please enter at least your Full Name and Phone Number.');
+      return;
+    }
+
+    const checked = [...document.querySelectorAll('input[name="gifts"]:checked')]
+                      .map(el => el.value);
+
+    console.log('RSVP:', { name, phone, gifts: checked });
+
+    document.getElementById('successMsg').classList.add('show');
+    document.querySelector('.btn').disabled = true;
+    document.querySelector('.btn').style.opacity = '.5';
+    document.querySelector('.btn').textContent = 'Submitted ✓';
+  }
+</script>
+</body>
+</html>
